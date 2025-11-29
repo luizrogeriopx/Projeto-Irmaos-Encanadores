@@ -5,6 +5,11 @@
     font-family: 'Mukta', sans-serif;
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 
 .mascara-form {
@@ -19,6 +24,7 @@
 
 header {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
@@ -54,8 +60,6 @@ header a:hover{
 }
 
 .conteudo-background {
-    height: auto;
-    width: auto;
     min-width: 100%;
     max-width: 100%;
     position: fixed;
@@ -94,7 +98,7 @@ button {
 }
 
 .mario {
-    height: 60%;
+    height: 60vw;
 }
 
 p {
@@ -104,6 +108,8 @@ p {
 
 .sobre-nos {
     max-width: 40%;
+    
+    
 }
 
 .fale-conosco {
@@ -151,7 +157,9 @@ textarea {
 
 @media (max-width: 1000px) {
     p {
-        display: none;
+        display: flex;
+        text-align: center;
+        margin: 5vw;
     }
 
     .caixa-mae {
