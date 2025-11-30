@@ -24,6 +24,7 @@ html, body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -47,9 +48,10 @@ header a:hover{
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     height: 100vh;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .background {
@@ -93,6 +95,8 @@ button {
     margin-top: 30px;
 }
 
+
+
 .logo {
     height: 200px;
 }
@@ -108,7 +112,7 @@ p {
 
 .sobre-nos {
     max-width: 40%;
-    
+ 
     
 }
 
@@ -174,10 +178,6 @@ textarea {
         align-items: center;
     }
 
-    .imagem-mario-luigi {
-        max-width: 80vw;
-        height: auto;
-    }
 
     .header {
         margin: 20px;
