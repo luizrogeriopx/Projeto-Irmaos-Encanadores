@@ -27,10 +27,13 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    column-gap: 10px; /* horizontal */
+    row-gap: 5px; /* vertical menor */
+    padding: 10px 0;
 }
 
 header a {
+
     font-size: 24px;
     color: white;
     cursor: pointer;
@@ -42,8 +45,19 @@ header a:hover{
     transition: 0.5s color ease-in-out;
 }
 .logo-header {
+    display: flex;
+    flex-wrap: wrap;
     height: 80px;
     margin: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px; /* espaçamento entre links */
+    row-gap: 5px;     /* espaçamento pequeno quando quebrar a linha */
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -112,8 +126,16 @@ p {
 
 .sobre-nos {
     max-width: 40%;
- 
-    
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+    .sobre-nos {
+        max-width: 90%;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
 }
 
 .fale-conosco {
